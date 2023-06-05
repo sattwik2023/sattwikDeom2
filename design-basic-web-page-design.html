@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color:navy;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: slategray;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        #wrapper{
+            border: 2px solid black;
+            width: 80vw;
+            background: radial-gradient(rgb(219, 201, 201) 30%,rgb(166, 192, 166) 60%,rgb(225, 225, 247) 100%);
+            margin:0 auto;
+        }
+        #header{
+            background: var(--main-color);
+            height: 100px;
+            color: white;
+        }
+        #header h1{
+            margin: 0;
+           padding: 30px 0 0 20px;
+        }
+        #menu{
+            background: lightsalmon;
+        }
+        #menu ul{
+            margin: 0;
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu a{
+            text-decoration: none;
+            display: block;
+            padding: 20px 10px;
+            color: black;
+            font-weight:700;
+        }
+        #menu a:hover{
+            color: rgb(102, 0, 255);
+            background-color: aquamarine;
+        }
+        #Body-content{
+            display: flex;
+        }
+        #content{
+            width: 80%;
+            /* float:left ; */
+            /* min-height: 300px; */
+            max-height: 100%;
+            padding: 10px 15px;
+            box-sizing: border-box;
+        }
+        #sidebar{
+            background: lightblue;
+            width: 20%;
+            /* float: right; */
+            /* min-height:300px; */
+            /* max-height:100%; */
+        }
+        #sidebar li{
+            list-style:square;
+            font-size: 20px;
+        }
+        #sidebar a{
+            display: block;
+            padding: 10px 0;
+            font-size: 15px;
+            width: 100px;
+        }
+        #sidebar a:hover{
+            color: white;
+            background-color:black;
+        }
+        #footer{
+            clear: both;
+            background-color: var(--main-color);
+            text-align: right;
+            padding: 10px 8px;
+        }
+        @media screen and (max-width: 1020px){
+            #wrapper{
+                width:800px;
+            }
+        }
+        @media screen and (max-width: 810px){
+            #wrapper{
+                width:500px;
+            }
+            #content{
+                width: 70%;
+                /* max-height: 100%; */
+                /* min-height: 100px; */
+            }
+            #sidebar{
+                width: 30%;
+                /* max-height: 100%; */
+                /* min-height: 100px; */
+            }
+        }
+        @media screen and (max-width: 510px){
+            #wrapper{
+                width:auto;
+            }
+            #Body-content{
+                display: block;
+            }
+            #content{
+                width: 100%;
+                min-height: 100%;
+                float: none;
+            }
+            #sidebar{
+                width: 100%;
+                min-height: 100%;
+                float: none;
+            }
+            #sidebar ul{
+                display: inline-block;
+                padding: 0;
+            }
+            #sidebar li{
+                display: inline-block;
+                padding: 0;
+                
+            }
+            #sidebar a{
+                display: inline;
+                padding-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Yahoo Baba</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="Body-content">
+            <div id="content">
+                <h2>Design Basic Layout</h2>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+                <p>Design Basic Layout Design Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic LayoutDesign Basic Layout</p>
+            </div>
+            <div id="sidebar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            Yaboo Baba Copyright @2018
+        </div>
+    </div>
+</body>
+</html>
